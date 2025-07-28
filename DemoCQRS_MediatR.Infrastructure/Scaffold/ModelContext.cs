@@ -55,7 +55,7 @@ public partial class ModelContext : DbContext
 
             entity.ToTable("tbl_student");
 
-            entity.Property(e => e.StudentId).HasPrecision(10);
+            entity.Property(e => e.StudentId).HasPrecision(10).ValueGeneratedOnAdd();
             entity.Property(e => e.Birthday).HasPrecision(7);
             entity.Property(e => e.Gender)
                 .HasPrecision(10)

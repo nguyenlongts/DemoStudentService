@@ -9,3 +9,4 @@ C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Domain\obj\Debug\ne
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Domain\obj\Debug\net8.0\refint\DemoCQRS_MediatR.Domain.dll
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Domain\obj\Debug\net8.0\DemoCQRS_MediatR.Domain.pdb
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Domain\obj\Debug\net8.0\ref\DemoCQRS_MediatR.Domain.dll
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Domain\obj\Debug\net8.0\DemoCQRS_MediatR.Domain.sourcelink.json

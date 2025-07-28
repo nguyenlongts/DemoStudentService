@@ -1,4 +1,5 @@
-﻿using DemoCQRS_MediatR.APP.Application.Queries;
+﻿using DemoCQRS_MediatR.APP.Application.Commands;
+using DemoCQRS_MediatR.APP.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -42,6 +43,26 @@ namespace DemoCQRS_MediatR.APP.Controllers
             catch (Exception e)
             {
                 return NotFound(e);
+            }
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Create(CreateStudentCommand cmd)
+        {
+            try
+            {
+                var result = await _mediator.Send(cmd);
+                if (!result)
+                {
+                    return BadRequest();
+                }
+                return Ok();
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
             }
         }
     }

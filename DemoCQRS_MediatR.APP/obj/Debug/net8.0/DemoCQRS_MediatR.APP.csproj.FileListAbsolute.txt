@@ -64,3 +64,4 @@ C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.APP\bin\Debug\net8.
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.APP\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.APP\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.APP\obj\Debug\net8.0\DemoCQRS_MediatR.APP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.APP\obj\Debug\net8.0\DemoCQRS_MediatR.APP.sourcelink.json

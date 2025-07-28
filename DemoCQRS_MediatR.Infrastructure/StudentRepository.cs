@@ -17,7 +17,17 @@ namespace EFCore_B3.Infrastructure.Repository
             var student = await _context.Students.Include(st => st.Marks).FirstOrDefaultAsync(s => s.StudentId == id);
             return student;
         }
+        public async Task<bool> CreateAsync(Student model)
+        {
+            try
+            {
+                await _context.Students.AddAsync(model);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex) { Console.Write(ex.ToString()); return false; }
+            return true;
 
+        }
         public async Task<List<Student>> GetStudents()
         {
             return await _context.Students.Include(st => st.Marks).ToListAsync();

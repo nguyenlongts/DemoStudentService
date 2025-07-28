@@ -15,3 +15,4 @@ C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.pdb
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.genruntimeconfig.cache
 C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\ref\DemoCQRS_MediatR.Infrastructure.dll
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.sourcelink.json

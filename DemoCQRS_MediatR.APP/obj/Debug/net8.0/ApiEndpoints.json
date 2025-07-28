@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "DemoCQRS_MediatR.APP.Controllers.StudentController",
+    "Method": "Create",
+    "RelativePath": "api/Student",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "DemoCQRS_MediatR.APP.Application.Commands.CreateStudentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoCQRS_MediatR.APP.Controllers.StudentController",
     "Method": "GetById",
     "RelativePath": "api/Student/{id}",
     "HttpMethod": "GET",
