@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

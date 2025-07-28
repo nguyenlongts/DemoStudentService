@@ -1,0 +1,17 @@
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\bin\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.deps.json
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\bin\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.runtimeconfig.json
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\bin\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.dll
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\bin\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.pdb
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\bin\Debug\net8.0\DemoCQRS_MediatR.Domain.dll
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\bin\Debug\net8.0\DemoCQRS_MediatR.Domain.pdb
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.AssemblyInfo.cs
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS.643884D9.Up2Date
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.dll
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\refint\DemoCQRS_MediatR.Infrastructure.dll
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.pdb
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\DemoCQRS_MediatR.Infrastructure.genruntimeconfig.cache
+C:\Users\Long\source\repos\DemoCQRS_MediatR\DemoCQRS_MediatR.Infrastructure\obj\Debug\net8.0\ref\DemoCQRS_MediatR.Infrastructure.dll
