@@ -17,6 +17,20 @@ namespace EFCore_B3.Infrastructure.Repository
             var student = await _context.Students.Include(st => st.Marks).FirstOrDefaultAsync(s => s.StudentId == id);
             return student;
         }
+        public async Task<bool> Delete(int id)
+        {
+            var student = await GetStudent(id);
+            if (student == null) { return false; }
+            _context.Students.Remove(student);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public void Update(Student model)
+        {
+            _context.Students.Update(model);
+            _context.SaveChanges();
+        }
         public async Task<bool> CreateAsync(Student model)
         {
             try

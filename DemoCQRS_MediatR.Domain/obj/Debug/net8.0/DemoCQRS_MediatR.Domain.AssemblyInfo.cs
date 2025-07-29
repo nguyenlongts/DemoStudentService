@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoCQRS_MediatR.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d56a84664be26467dfa58cf94eaaeaf2b9cbf75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d12dbffcfb2aaf7f4e0a5c34ecebad733364a1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoCQRS_MediatR.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoCQRS_MediatR.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

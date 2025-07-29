@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\dtos\\getstudentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\dtos\\getstudentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\queries\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\queries\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\democqrs_mediatr.app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\democqrs_mediatr.app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\updatestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\updatestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\updatestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\updatestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|solutionrelative:democqrs_mediatr.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD07633-C97A-44D3-87CC-2E14D68FD907}|DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.infrastructure\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AD07633-C97A-44D3-87CC-2E14D68FD907}|DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj|solutionrelative:democqrs_mediatr.infrastructure\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4AD07633-C97A-44D3-87CC-2E14D68FD907}|DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.infrastructure\\scaffold\\modelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AD07633-C97A-44D3-87CC-2E14D68FD907}|DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj|solutionrelative:democqrs_mediatr.infrastructure\\scaffold\\modelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\deletestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\deletestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\commands\\deletestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\commands\\deletestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\queries\\getstudentsqueryhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,16 +55,16 @@
       "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\queries\\getstudentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\application\\queries\\getstudentbyidqueryhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\application\\queries\\getstudentbyidqueryhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\dtos\\getstudentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\dtos\\getstudentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.domain\\entities\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|solutionrelative:democqrs_mediatr.domain\\entities\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|solutionrelative:democqrs_mediatr.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\democqrs_mediatr.app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\democqrs_mediatr.app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCD950CA-8426-42B3-915E-2134BDBBFCB0}|DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{4AD07633-C97A-44D3-87CC-2E14D68FD907}|DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj|solutionrelative:democqrs_mediatr.infrastructure\\democqrs_mediatr.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|c:\\users\\long\\source\\repos\\democqrs_mediatr\\democqrs_mediatr.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E0C886AC-7F12-4D6A-941B-0250E64858BA}|DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj|solutionrelative:democqrs_mediatr.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -86,101 +94,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetStudentByIDQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQuery.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQuery.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQuery.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T08:07:22.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateStudentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T09:17:06.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DemoCQRS_MediatR.APP.http",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-07-28T09:54:56.426Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetStudentResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UpdateStudentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommand.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommand.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommand.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T08:21:17.292Z",
+              "WhenOpened": "2025-07-29T10:05:53.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CreateStudentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
+              "Title": "CreateStudentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T09:08:25.199Z",
+              "WhenOpened": "2025-07-28T09:17:06.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Infrastructure\\StudentRepository.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.Infrastructure\\StudentRepository.cs",
               "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Infrastructure\\StudentRepository.cs",
               "RelativeToolTip": "DemoCQRS_MediatR.Infrastructure\\StudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T07:26:32.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T07:22:04.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Controllers\\StudentController.cs",
               "RelativeToolTip": "DemoCQRS_MediatR.APP\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T07:36:13.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateStudentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommandHandler.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\UpdateStudentCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:48:48.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateStudentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\CreateStudentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T09:08:25.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeleteStudentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommandHandler.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:18:50.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeleteStudentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommand.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommand.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommand.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Commands\\DeleteStudentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:03:43.376Z",
               "EditorCaption": ""
             },
             {
@@ -191,27 +225,40 @@
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.Infrastructure\\Scaffold\\ModelContext.cs",
               "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Infrastructure\\Scaffold\\ModelContext.cs",
               "RelativeToolTip": "DemoCQRS_MediatR.Infrastructure\\Scaffold\\ModelContext.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA5wDUAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T07:21:33.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Program.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Program.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Program.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T07:38:46.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "GetStudentsQueryHandle.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQueryHandle.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQueryHandle.cs",
               "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQueryHandle.cs",
               "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQueryHandle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T07:24:49.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "GetStudentsQuery.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQuery.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQuery.cs",
@@ -219,23 +266,48 @@
               "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentsQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:22:59.081Z"
+              "WhenOpened": "2025-07-28T07:22:59.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
+              "Title": "GetStudentResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\DTOs\\GetStudentResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:21:17.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Mark.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Mark.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.Domain\\Entities\\Mark.cs",
               "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Mark.cs",
               "RelativeToolTip": "DemoCQRS_MediatR.Domain\\Entities\\Mark.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T07:58:46.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
+              "Title": "DemoCQRS_MediatR.APP.http",
+              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
+              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
+              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
+              "RelativeToolTip": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-07-28T09:54:56.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Subject.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.Domain\\Entities\\Subject.cs",
@@ -247,31 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetStudentByIDQueryHandle.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQueryHandle.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQueryHandle.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQueryHandle.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Application\\Queries\\GetStudentByIDQueryHandle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T08:10:12.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.Domain\\Entities\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:22:04.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Gender.cs",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Domain\\Gender.cs",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.Domain\\Gender.cs",
@@ -283,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "DemoCQRS_MediatR.APP.csproj",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj",
@@ -295,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "DemoCQRS_MediatR.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj",
@@ -307,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\appsettings.json",
               "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\appsettings.json",
@@ -316,18 +364,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-28T06:49:53.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Program.cs",
-              "RelativeDocumentMoniker": "DemoCQRS_MediatR.APP\\Program.cs",
-              "ToolTip": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\Program.cs",
-              "RelativeToolTip": "DemoCQRS_MediatR.APP\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:38:46.717Z"
             }
           ]
         }

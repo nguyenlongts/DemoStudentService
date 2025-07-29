@@ -65,5 +65,43 @@ namespace DemoCQRS_MediatR.APP.Controllers
                 return BadRequest(e);
             }
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var cmd = new DeleteStudentCommand(id);
+                var result = await _mediator.Send(cmd);
+                if (!result)
+                {
+                    return BadRequest();
+                }
+                return Ok();
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+        [HttpPut]
+        public async Task<IActionResult> Update(UpdateStudentCommand cmd)
+        {
+            try
+            {
+                var result = await _mediator.Send(cmd);
+                if (!result)
+                {
+                    return BadRequest();
+                }
+                return Ok();
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
     }
 }
