@@ -1,26 +1,25 @@
-﻿using EFCore_B3.Infrastructure.Repository;
+﻿
+using DemoCQRS_MediatR.Domain.Entities;
+using DemoCQRS_MediatR.Domain.Events;
 using MediatR;
 
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
-    public class DeleteStudentCommandHandler : IRequestHandler<DeleteStudentCommand, bool>
+    public class DeleteStudentCommandHandler : IRequestHandler<DeleteStudentCommand>
     {
-        private readonly StudentRepository _repo;
-        public DeleteStudentCommandHandler(StudentRepository repo)
-        {
-            _repo = repo;
-        }
-        public Task<bool> Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
+        private readonly IPublisher _publisher;
+        public DeleteStudentCommandHandler(IPublisher publisher)
         {
 
-            var isSuccess = Remove(request.studentId);
-            return isSuccess;
-
+            _publisher = publisher;
         }
-
-        private async Task<bool> Remove(int id)
+        public async Task Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
         {
-            return await _repo.Delete(id);
+            
+            await _publisher.Publish(new ConfirmedDeleteStudentEvent(request.studentId));
+
         }
+
+        
     }
 }

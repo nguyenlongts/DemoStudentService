@@ -1,38 +1,27 @@
-﻿using DemoCQRS_MediatR.Domain;
-using DemoCQRS_MediatR.Domain.Entites;
-using EFCore_B3.Infrastructure.Repository;
-using MediatR;
+﻿using DemoCQRS_MediatR.Domain.Events;
 
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
-    public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, bool>
+    public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, GetStudentResponse>
     {
-        private readonly StudentRepository _repo;
-        public CreateStudentCommandHandler(StudentRepository repo)
-        {
-            _repo = repo;
-        }
-        public async Task<bool> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
-        {
-            var isSuccess = await Create(request);
-            if (!isSuccess)
-            {
-                return false;
-            }
-            return true;
+
+        private readonly IPublisher _publisher;
+
+        public CreateStudentCommandHandler(
+            StudentRepository repo,
+            IPublisher publisher)
+        { 
+            _publisher = publisher;
         }
 
-        private async Task<bool> Create(CreateStudentCommand request)
+        public async Task<GetStudentResponse> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
         {
-            var student = new Student()
-            {
-                StudentName = request.Name,
-                Birthday = request.DOB,
-                Gender = (Gender)request.Gender,
-                Status = request.Status
-            };
-            return await _repo.CreateAsync(student);
+            var student = new Student(request.Name, request.DOB, (Gender)request.Gender, request.ClassId);
+            
+                await _publisher.Publish(new ConfirmedCreateStudentEvent(student)); 
+           
+            return new GetStudentResponse { ClassId = request.ClassId, Name = request.Name, DOB = DateOnly.FromDateTime(request.DOB), Gender = request.Gender.ToString() };
         }
-
     }
 }
+

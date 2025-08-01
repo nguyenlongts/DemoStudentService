@@ -1,4 +1,4 @@
-﻿namespace DemoCQRS_MediatR.Domain.Entites;
+﻿namespace DemoCQRS_MediatR.Domain.Entities;
 
 public partial class Subject
 {

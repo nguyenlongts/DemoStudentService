@@ -1,0 +1,11 @@
+﻿global using DemoCQRS_MediatR.APP.Application.Commands;
+global using DemoCQRS_MediatR.APP.Application.Queries;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using DemoCQRS_MediatR.Domain;
+global using DemoCQRS_MediatR.Domain.Entities;
+global using DemoCQRS_MediatR.APP.DTOs;
+global using EFCore_B3.Infrastructure.Repository;
+global using Confluent.Kafka;
+global using DemoCQRS_MediatR.Infrastructure;
+global using Microsoft.EntityFrameworkCore;

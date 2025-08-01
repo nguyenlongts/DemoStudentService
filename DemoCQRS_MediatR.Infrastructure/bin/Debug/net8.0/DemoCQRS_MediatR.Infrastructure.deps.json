@@ -722,6 +722,9 @@
       },
       "System.Threading.Channels/6.0.0": {},
       "DemoCQRS_MediatR.Domain/1.0.0": {
+        "dependencies": {
+          "MediatR": "13.0.0"
+        },
         "runtime": {
           "DemoCQRS_MediatR.Domain.dll": {
             "assemblyVersion": "1.0.0.0",

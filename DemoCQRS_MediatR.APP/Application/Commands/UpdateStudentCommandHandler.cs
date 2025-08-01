@@ -1,6 +1,4 @@
-﻿using DemoCQRS_MediatR.Domain;
-using EFCore_B3.Infrastructure.Repository;
-using MediatR;
+﻿
 
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
@@ -29,13 +27,11 @@ namespace DemoCQRS_MediatR.APP.Application.Commands
             {
                 return false;
             }
-            student.StudentId = request.StudentId;
-            student.Status = request.Status;
-            student.StudentName = request.Name;
-            student.Birthday = request.DOB;
-            student.Gender = (Gender)request.Gender;
+
+            student.UpdateInfo(request.Name, request.DOB, (Gender)request.Gender, (StudentStatus)request.Status);
             _repo.Update(student);
             return true;
+
         }
 
     }

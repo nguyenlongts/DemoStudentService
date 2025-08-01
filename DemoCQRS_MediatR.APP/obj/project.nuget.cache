@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "j0xQMYZcbpM=",
+  "dgSpecHash": "TjK6T+D8UZw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Long\\source\\repos\\DemoCQRS_MediatR\\DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Long\\.nuget\\packages\\confluent.kafka\\2.11.0\\confluent.kafka.2.11.0.nupkg.sha512",
+    "C:\\Users\\Long\\.nuget\\packages\\librdkafka.redist\\2.11.0\\librdkafka.redist.2.11.0.nupkg.sha512",
     "C:\\Users\\Long\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\Long\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Long\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.18\\microsoft.entityframeworkcore.8.0.18.nupkg.sha512",

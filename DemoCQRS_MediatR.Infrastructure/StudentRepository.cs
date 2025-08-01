@@ -1,22 +1,31 @@
-﻿using DemoCQRS_MediatR.Domain.Entites;
-using DemoCQRS_MediatR.Infrastructure.Scaffold;
+﻿using DemoCQRS_MediatR.Domain.Entities;
+using DemoCQRS_MediatR.Infrastructure;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Concurrent;
 
 namespace EFCore_B3.Infrastructure.Repository
 {
     public class StudentRepository
     {
+        private readonly IMediator _mediator;
         private readonly ModelContext _context;
-        public StudentRepository(ModelContext context)
+        public StudentRepository(ModelContext context,IMediator mediator)
         {
             _context = context;
+            _mediator = mediator;
         }
 
         public async Task<Student> GetStudent(int id)
         {
-            var student = await _context.Students.Include(st => st.Marks).FirstOrDefaultAsync(s => s.StudentId == id);
+            var student = await _context.Students
+                .Include(st => st.Marks)
+                    .ThenInclude(m => m.Subject)
+                .Include(c => c.Class)
+                .FirstOrDefaultAsync(s => s.StudentId == id);
             return student;
         }
+
         public async Task<bool> Delete(int id)
         {
             var student = await GetStudent(id);
@@ -44,8 +53,14 @@ namespace EFCore_B3.Infrastructure.Repository
         }
         public async Task<List<Student>> GetStudents()
         {
-            return await _context.Students.Include(st => st.Marks).ToListAsync();
+            return await _context.Students
+                .Include(st => st.Marks)
+                    .ThenInclude(m => m.Subject)
+                .Include(c => c.Class)
+                .ToListAsync();
         }
+
+
 
     }
 }

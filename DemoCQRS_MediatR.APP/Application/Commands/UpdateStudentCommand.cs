@@ -1,5 +1,4 @@
-﻿using MediatR;
-
+﻿
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
     public class UpdateStudentCommand : IRequest<bool>

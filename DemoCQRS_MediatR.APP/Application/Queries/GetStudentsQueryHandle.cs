@@ -1,6 +1,6 @@
-﻿using DemoCQRS_MediatR.APP.DTOs;
-using EFCore_B3.Infrastructure.Repository;
-using MediatR;
+﻿
+
+using DemoCQRS_MediatR.APP.DTOs;
 
 namespace DemoCQRS_MediatR.APP.Application.Queries
 {
@@ -34,6 +34,13 @@ namespace DemoCQRS_MediatR.APP.Application.Queries
                 DOB = DateOnly.FromDateTime(student.Birthday),
                 Gender = student.Gender.ToString(),
                 Marks = student.Marks
+                    .Select(m => new MarkDTO
+                    {
+                        SubjectName = m.Subject.SubjectName,
+                        Value = m.Score
+                    })
+                    .ToList(),
+                ClassId = student.ClassId
             }).ToList();
             return result;
         }

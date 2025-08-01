@@ -1,7 +1,4 @@
-﻿using DemoCQRS_MediatR.APP.Application.Commands;
-using DemoCQRS_MediatR.APP.Application.Queries;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
+﻿using DemoCQRS_MediatR.APP.Application;
 
 namespace DemoCQRS_MediatR.APP.Controllers
 {
@@ -53,17 +50,15 @@ namespace DemoCQRS_MediatR.APP.Controllers
             try
             {
                 var result = await _mediator.Send(cmd);
-                if (!result)
-                {
-                    return BadRequest();
-                }
-                return Ok();
+                
+                return Ok(result);
 
             }
             catch (Exception e)
             {
-                return BadRequest(e);
+                return BadRequest(new { message = e.Message });
             }
+
         }
 
         [HttpDelete]
@@ -72,11 +67,8 @@ namespace DemoCQRS_MediatR.APP.Controllers
             try
             {
                 var cmd = new DeleteStudentCommand(id);
-                var result = await _mediator.Send(cmd);
-                if (!result)
-                {
-                    return BadRequest();
-                }
+                await _mediator.Send(cmd);
+                
                 return Ok();
 
             }

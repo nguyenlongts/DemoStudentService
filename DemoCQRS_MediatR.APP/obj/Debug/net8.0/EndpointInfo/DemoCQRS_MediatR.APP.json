@@ -139,6 +139,10 @@
           "status": {
             "type": "integer",
             "format": "int32"
+          },
+          "classId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

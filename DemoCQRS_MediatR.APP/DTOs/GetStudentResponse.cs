@@ -1,16 +1,16 @@
-﻿using DemoCQRS_MediatR.Domain.Entites;
-
+﻿
 namespace DemoCQRS_MediatR.APP.DTOs
 {
     public record GetStudentResponse
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public DateOnly DOB { get; set; }
 
-        public string Gender { get; set; }
+        public string? Gender { get; set; }
 
-        public virtual ICollection<Mark> Marks { get; set; } = new List<Mark>();
+        public int ClassId { get; set; }
+        public List<MarkDTO> Marks { get; set; } = new();
 
     }
 }

@@ -1,8 +1,7 @@
-﻿using MediatR;
-
+﻿
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
-    public class CreateStudentCommand : IRequest<bool>
+    public class CreateStudentCommand : IRequest<GetStudentResponse>
     {
         public string Name { get; set; }
 
@@ -12,12 +11,14 @@ namespace DemoCQRS_MediatR.APP.Application.Commands
 
         public int Status { get; set; }
 
-        public CreateStudentCommand(string name, DateTime dob, int gender, int status)
+        public int ClassId { get; set; }
+        public CreateStudentCommand(string name, DateTime dob, int gender, int status,int classid)
         {
             Name = name;
             DOB = dob;
             Gender = gender;
             Status = status;
+            ClassId = classid;
         }
     }
 }
