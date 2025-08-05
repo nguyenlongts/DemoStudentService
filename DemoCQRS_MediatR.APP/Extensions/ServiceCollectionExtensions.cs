@@ -1,7 +1,4 @@
-﻿
-using DemoCQRS_MediatR.Infrastructure;
-
-namespace DemoCQRS_MediatR.APP.Extensions
+﻿namespace DemoCQRS_MediatR.APP.Extensions
 {
     public static class ServiceCollectionExtensions
     {
@@ -42,14 +39,16 @@ namespace DemoCQRS_MediatR.APP.Extensions
             {
                 return new ProducerBuilder<Null, string>(producerConfig).Build();
             });
-
+            services.AddSingleton<IProducer<int, string>>(sp =>
+            {
+                return new ProducerBuilder<int, string>(producerConfig).Build();
+            });
             var consumerConfig = new ConsumerConfig
             {
                 BootstrapServers = configuration["Kafka:BootstrapServers"],
                 GroupId = configuration["Kafka:GroupId"] ?? "demo-consumer-group",
                 AutoOffsetReset = AutoOffsetReset.Earliest
             };
-
 
             services.AddSingleton<IConsumer<Null, string>>(sp =>
             {

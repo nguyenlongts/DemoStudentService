@@ -1,10 +1,4 @@
-﻿using DemoCQRS_MediatR.Domain.Entities;
-using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 
 namespace DemoCQRS_MediatR.Domain.Events
 {

@@ -4,11 +4,12 @@
     {
         public string Message { get; }
         public bool IsSuccess { get; }
-
-        public StudentDeletedIntegrationEvent(string message, bool isSuccess)
+        public int ClassId { get; }
+        public StudentDeletedIntegrationEvent(string message, bool isSuccess, int classId)
         {
             Message = message;
             IsSuccess = isSuccess;
+            ClassId = classId;
         }
     }
 

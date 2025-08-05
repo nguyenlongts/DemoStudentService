@@ -1,5 +1,4 @@
-﻿using DemoCQRS_MediatR.APP.Application;
-
+﻿
 namespace DemoCQRS_MediatR.APP.Controllers
 {
     [Route("api/[controller]")]
@@ -31,16 +30,14 @@ namespace DemoCQRS_MediatR.APP.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            try
-            {
+            
                 var query = new GetStudentByIDQuery(id);
                 var result = await _mediator.Send(query);
-                return Ok(result);
+            if (result == null) { 
+            return NotFound();
             }
-            catch (Exception e)
-            {
-                return NotFound(e);
-            }
+            return Ok(result);
+            
         }
 
         [HttpPost]
@@ -67,8 +64,11 @@ namespace DemoCQRS_MediatR.APP.Controllers
             try
             {
                 var cmd = new DeleteStudentCommand(id);
-                await _mediator.Send(cmd);
-                
+                var result = await _mediator.Send(cmd);
+                if (!result)
+                {
+                    return BadRequest();
+                }
                 return Ok();
 
             }

@@ -1,5 +1,7 @@
 ﻿
 
+using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+
 namespace DemoCQRS_MediatR.APP.Application.Queries
 {
     public class GetStudentByIDQueryHandle : IRequestHandler<GetStudentByIDQuery, GetStudentResponse>
@@ -16,7 +18,7 @@ namespace DemoCQRS_MediatR.APP.Application.Queries
                 var student = await GetStudent(request.StudentId);
                 if (student == null)
                 {
-                    return null;
+                    throw new Exception("Not found");
                 }
                 var result = new GetStudentResponse()
                 {

@@ -1,8 +1,4 @@
-﻿
-
-using DemoCQRS_MediatR.APP.DTOs;
-
-namespace DemoCQRS_MediatR.APP.Application.Queries
+﻿namespace DemoCQRS_MediatR.APP.Application.Queries
 {
     public class GetStudentsQueryHandle : IRequestHandler<GetStudentsQuery, List<GetStudentResponse>>
     {

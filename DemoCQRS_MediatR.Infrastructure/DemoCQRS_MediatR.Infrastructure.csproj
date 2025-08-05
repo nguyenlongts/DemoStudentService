@@ -25,8 +25,4 @@
     <ProjectReference Include="..\DemoCQRS_MediatR.Domain\DemoCQRS_MediatR.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Scaffold\" />
-  </ItemGroup>
-
 </Project>

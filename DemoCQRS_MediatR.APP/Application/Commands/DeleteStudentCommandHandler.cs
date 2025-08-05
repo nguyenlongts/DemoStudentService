@@ -1,25 +1,30 @@
 ﻿
 using DemoCQRS_MediatR.Domain.Entities;
-using DemoCQRS_MediatR.Domain.Events;
-using MediatR;
 
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
-    public class DeleteStudentCommandHandler : IRequestHandler<DeleteStudentCommand>
+    public class DeleteStudentCommandHandler : IRequestHandler<DeleteStudentCommand, bool>
     {
         private readonly IPublisher _publisher;
-        public DeleteStudentCommandHandler(IPublisher publisher)
+        private readonly StudentRepository _repo;
+        public DeleteStudentCommandHandler(IPublisher publisher, StudentRepository repo)
         {
 
             _publisher = publisher;
+            _repo = repo;
         }
-        public async Task Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
         {
-            
-            await _publisher.Publish(new ConfirmedDeleteStudentEvent(request.studentId));
+            var student = await _repo.GetStudent(request.studentId);
+            if (student == null) return false;
+            student.SetStudentDeleted();
+            _repo.Delete(student);
+            await _repo.SaveEntitiesAsync();
 
+            return true;
         }
 
-        
+
+
     }
 }

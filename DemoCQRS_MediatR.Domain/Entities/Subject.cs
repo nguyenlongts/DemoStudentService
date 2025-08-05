@@ -1,4 +1,4 @@
-﻿namespace DemoCQRS_MediatR.Domain.Entities;
+﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 
 public partial class Subject
 {

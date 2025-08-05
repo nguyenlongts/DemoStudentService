@@ -1,19 +1,15 @@
-﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DemoCQRS_MediatR.Domain.Events
+﻿namespace DemoCQRS_MediatR.Domain.Events
 {
-    public class ConfirmedDeleteStudentEvent:INotification
+    public class ConfirmedDeleteStudentEvent : INotification
     {
         public int StudentId { get; }
+        public int ClassId { get; }
 
-        public ConfirmedDeleteStudentEvent(int studentId)
+        public ConfirmedDeleteStudentEvent(int studentId, int classId)
         {
             StudentId = studentId;
+            ClassId = classId;
         }
     }
+
 }

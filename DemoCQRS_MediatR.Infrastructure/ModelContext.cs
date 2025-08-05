@@ -1,20 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using DemoCQRS_MediatR.Domain.Entities;
+using DemoCQRS_MediatR.Infrastructure.EntityConfiguration;
+using MediatR;
+using DemoCQRS_MediatR.Infrastructure.Extensions;
+using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 namespace DemoCQRS_MediatR.Infrastructure;
 
 public partial class ModelContext : DbContext
 {
+    private readonly IMediator _mediator;
+
     public ModelContext()
     {
     }
 
-    public ModelContext(DbContextOptions<ModelContext> options)
+    public ModelContext(DbContextOptions<ModelContext> options,IMediator mediator)
         : base(options)
     {
+        _mediator = mediator;
     }
-
+    
     public virtual DbSet<Class> Classes { get; set; }
 
     public virtual DbSet<Mark> Marks { get; set; }
@@ -26,6 +32,7 @@ public partial class ModelContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.ApplyConfiguration(new StudentEntityConfiguration());
         modelBuilder
             .HasDefaultSchema("TEST")
             .UseCollation("USING_NLS_COMP");
@@ -71,27 +78,7 @@ public partial class ModelContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
-        modelBuilder.Entity<Student>(entity =>
-        {
-            entity.HasKey(e => e.StudentId);
-
-            entity.ToTable("tbl_student");
-
-            entity.Property(e => e.StudentId).HasPrecision(10);
-            entity.Property(e => e.Birthday).HasPrecision(7);
-            entity.Property(e => e.ClassId).HasPrecision(10);
-            entity.Property(e => e.Gender)
-                .HasPrecision(10)
-                .HasDefaultValueSql("0 ");
-            entity.Property(e => e.Status)
-                .HasDefaultValueSql("1.0 ")
-                .HasColumnType("NUMBER");
-            entity.Property(e => e.StudentName).HasMaxLength(250);
-
-            entity.HasOne(d => d.Class).WithMany(p => p.Students)
-                .HasForeignKey(d => d.ClassId)
-                .HasConstraintName("FK_STUDENT_CLASS");
-        });
+      
 
         modelBuilder.Entity<Subject>(entity =>
         {
@@ -111,4 +98,5 @@ public partial class ModelContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+    
 }

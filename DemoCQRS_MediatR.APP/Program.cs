@@ -1,5 +1,3 @@
-using DemoCQRS_MediatR.APP.Extensions;
-
 var builder = WebApplication.CreateBuilder(args);
 
 

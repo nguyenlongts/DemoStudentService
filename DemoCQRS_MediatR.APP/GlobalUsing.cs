@@ -9,3 +9,7 @@ global using EFCore_B3.Infrastructure.Repository;
 global using Confluent.Kafka;
 global using DemoCQRS_MediatR.Infrastructure;
 global using Microsoft.EntityFrameworkCore;
+global using DemoCQRS_MediatR.Domain.Events;
+global using DemoCQRS_MediatR.APP.Application.IntegrationEvents;
+global using System.Text.Json;
+global using DemoCQRS_MediatR.APP.Extensions;

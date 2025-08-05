@@ -1,5 +1,7 @@
 ﻿
 
+using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
     public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, bool>

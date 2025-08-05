@@ -1,5 +1,6 @@
-﻿using DemoCQRS_MediatR.Domain.Entities;
+﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 using DemoCQRS_MediatR.Infrastructure;
+using DemoCQRS_MediatR.Infrastructure.Extensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Concurrent;
@@ -10,7 +11,7 @@ namespace EFCore_B3.Infrastructure.Repository
     {
         private readonly IMediator _mediator;
         private readonly ModelContext _context;
-        public StudentRepository(ModelContext context,IMediator mediator)
+        public StudentRepository(ModelContext context, IMediator mediator)
         {
             _context = context;
             _mediator = mediator;
@@ -18,7 +19,12 @@ namespace EFCore_B3.Infrastructure.Repository
 
         public async Task<Student> GetStudent(int id)
         {
-            var student = await _context.Students
+            var student = await _context.Students.FindAsync(id);
+            if (student == null)
+            {
+                return null;
+            }
+            student = await _context.Students
                 .Include(st => st.Marks)
                     .ThenInclude(m => m.Subject)
                 .Include(c => c.Class)
@@ -26,30 +32,19 @@ namespace EFCore_B3.Infrastructure.Repository
             return student;
         }
 
-        public async Task<bool> Delete(int id)
+        public void Delete(Student student)
         {
-            var student = await GetStudent(id);
-            if (student == null) { return false; }
             _context.Students.Remove(student);
-            await _context.SaveChangesAsync();
-            return true;
         }
 
         public void Update(Student model)
         {
             _context.Students.Update(model);
-            _context.SaveChanges();
-        }
-        public async Task<bool> CreateAsync(Student model)
-        {
-            try
-            {
-                await _context.Students.AddAsync(model);
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex) { Console.Write(ex.ToString()); return false; }
-            return true;
 
+        }
+        public void Create(Student model)
+        {
+            _context.Students.Add(model);
         }
         public async Task<List<Student>> GetStudents()
         {
@@ -59,8 +54,16 @@ namespace EFCore_B3.Infrastructure.Repository
                 .Include(c => c.Class)
                 .ToListAsync();
         }
+        public async Task DispatchDomainEventAsync()
+        {
+            await _mediator.DispatchDomainEventAsync(_context);
+        }
 
-
+        public async Task SaveEntitiesAsync()
+        {
+            await _mediator.DispatchDomainEventAsync(_context);
+            await _context.SaveChangesAsync();
+        }
 
     }
 }

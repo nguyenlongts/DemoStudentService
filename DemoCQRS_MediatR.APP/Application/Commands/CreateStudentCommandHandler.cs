@@ -1,27 +1,30 @@
-﻿using DemoCQRS_MediatR.Domain.Events;
+﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 
-namespace DemoCQRS_MediatR.APP.Application.Commands
+public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, GetStudentResponse>
 {
-    public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, GetStudentResponse>
+    private readonly IMediator _mediator;
+    private readonly StudentRepository _repo;
+
+    public CreateStudentCommandHandler(StudentRepository repo, IMediator mediator)
     {
+        _repo = repo;
+        _mediator = mediator;
+    }
 
-        private readonly IPublisher _publisher;
+    public async Task<GetStudentResponse> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
+    {
+        var student = new Student(request.Name, request.DOB, (Gender)request.Gender, request.ClassId);
+        student.SetStudentCreated();
 
-        public CreateStudentCommandHandler(
-            StudentRepository repo,
-            IPublisher publisher)
-        { 
-            _publisher = publisher;
-        }
+        _repo.Create(student);
+        await _repo.SaveEntitiesAsync();
 
-        public async Task<GetStudentResponse> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
+        return new GetStudentResponse
         {
-            var student = new Student(request.Name, request.DOB, (Gender)request.Gender, request.ClassId);
-            
-                await _publisher.Publish(new ConfirmedCreateStudentEvent(student)); 
-           
-            return new GetStudentResponse { ClassId = request.ClassId, Name = request.Name, DOB = DateOnly.FromDateTime(request.DOB), Gender = request.Gender.ToString() };
-        }
+            ClassId = student.ClassId,
+            Name = student.StudentName,
+            DOB = DateOnly.FromDateTime(student.Birthday),
+            Gender = student.Gender.ToString()
+        };
     }
 }
-
