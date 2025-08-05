@@ -1,4 +1,6 @@
-﻿namespace DemoCQRS_MediatR.APP.Extensions
+﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+
+namespace DemoCQRS_MediatR.APP.Extensions
 {
     public static class ServiceCollectionExtensions
     {
@@ -59,7 +61,7 @@
         }
         private static IServiceCollection AddScopeService(this IServiceCollection services)
         {
-            services.AddScoped<StudentRepository>();
+            services.AddScoped<IStudentRepository,StudentRepository>();
 
             return services;
         }

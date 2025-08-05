@@ -1,6 +1,6 @@
 ﻿namespace DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 
-public class Student:BaseEntity
+public class Student:BaseEntity,IAggregateRoot
 
 {
     private readonly List<Mark> _marks = new();

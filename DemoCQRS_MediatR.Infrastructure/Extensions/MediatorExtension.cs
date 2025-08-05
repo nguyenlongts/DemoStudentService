@@ -1,5 +1,5 @@
 ﻿using DemoCQRS_MediatR.Domain;
-using DemoCQRS_MediatR.Domain.Entities;
+
 using MediatR;
 using System;
 using System.Collections.Generic;

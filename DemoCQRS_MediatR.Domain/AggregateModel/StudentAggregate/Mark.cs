@@ -1,6 +1,6 @@
 ﻿namespace DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
 
-public partial class Mark
+public class Mark : ValueObject
 {
     public int StudentId { get; private set; }
 

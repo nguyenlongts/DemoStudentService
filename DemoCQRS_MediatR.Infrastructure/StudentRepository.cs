@@ -7,7 +7,7 @@ using System.Collections.Concurrent;
 
 namespace EFCore_B3.Infrastructure.Repository
 {
-    public class StudentRepository
+    public class StudentRepository:IStudentRepository
     {
         private readonly IMediator _mediator;
         private readonly ModelContext _context;
@@ -54,11 +54,6 @@ namespace EFCore_B3.Infrastructure.Repository
                 .Include(c => c.Class)
                 .ToListAsync();
         }
-        public async Task DispatchDomainEventAsync()
-        {
-            await _mediator.DispatchDomainEventAsync(_context);
-        }
-
         public async Task SaveEntitiesAsync()
         {
             await _mediator.DispatchDomainEventAsync(_context);

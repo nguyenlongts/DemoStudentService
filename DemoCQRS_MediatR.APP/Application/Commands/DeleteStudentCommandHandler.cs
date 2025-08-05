@@ -1,5 +1,4 @@
 ﻿
-using DemoCQRS_MediatR.Domain.Entities;
 
 namespace DemoCQRS_MediatR.APP.Application.Commands
 {
