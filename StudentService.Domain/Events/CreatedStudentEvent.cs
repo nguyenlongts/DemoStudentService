@@ -2,10 +2,10 @@
 
 namespace StudentService.Domain.Events
 {
-    public class ConfirmedCreateStudentEvent:INotification
+    public class CreatedStudentEvent:INotification
     {
         public Student Student { get; }
-        public ConfirmedCreateStudentEvent(Student student)
+        public CreatedStudentEvent(Student student)
         {
             Student = student;
         }

@@ -41,14 +41,19 @@ public class Student:BaseEntity,IAggregateRoot
         Gender = gender;
         Status = status;
     }
+    //public void SetConfirmedAssignNewClass(int newClassId)
+    //{
+    //    var @event = new ConfirmedAssignNewClass(newClassId);
+    //    AddDomainEvent(@event);
+    //}
     public void SetStudentDeleted()
     {
-        var @event = new ConfirmedDeleteStudentEvent(StudentId,ClassId);
+        var @event = new DeletedStudentEvent(StudentId,ClassId);
         AddDomainEvent(@event);
     }
     public void SetStudentCreated()
     {
-        AddDomainEvent(new ConfirmedCreateStudentEvent(this));
+        AddDomainEvent(new CreatedStudentEvent(this));
     }
     private static int ValidateClassId(int classId)
     {

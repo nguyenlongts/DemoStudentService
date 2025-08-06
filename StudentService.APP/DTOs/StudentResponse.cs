@@ -1,6 +1,6 @@
 ﻿namespace StudentService.APP.DTOs
 {
-    public record GetStudentResponse
+    public record StudentResponse
     {
         public string? Name { get; set; }
 

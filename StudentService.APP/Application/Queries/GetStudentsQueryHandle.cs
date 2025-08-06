@@ -3,14 +3,14 @@ using StudentService.Domain.AggregateModel.StudentAggregate;
 
 namespace StudentService.APP.Application.Queries
 {
-    public class GetStudentsQueryHandle : IRequestHandler<GetStudentsQuery, List<GetStudentResponse>>
+    public class GetStudentsQueryHandle : IRequestHandler<GetStudentsQuery, List<StudentResponse>>
     {
         private readonly IStudentRepository _repo;
         public GetStudentsQueryHandle(IStudentRepository repo)
         {
             _repo = repo;
         }
-        public Task<List<GetStudentResponse>> Handle(GetStudentsQuery request, CancellationToken cancellationToken)
+        public Task<List<StudentResponse>> Handle(GetStudentsQuery request, CancellationToken cancellationToken)
         {
             try
             {
@@ -23,11 +23,11 @@ namespace StudentService.APP.Application.Queries
             }
         }
 
-        private async Task<List<GetStudentResponse>> GetStudents()
+        private async Task<List<StudentResponse>> GetStudents()
         {
             var students = await _repo.GetStudents()
                 ;
-            var result = students.Select(student => new GetStudentResponse
+            var result = students.Select(student => new StudentResponse
             {
                 Name = student.StudentName,
                 DOB = DateOnly.FromDateTime(student.Birthday),

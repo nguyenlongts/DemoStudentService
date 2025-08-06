@@ -1,11 +1,11 @@
 ﻿namespace StudentService.Domain.Events
 {
-    public class ConfirmedDeleteStudentEvent : INotification
+    public class DeletedStudentEvent : INotification
     {
         public int StudentId { get; }
         public int ClassId { get; }
 
-        public ConfirmedDeleteStudentEvent(int studentId, int classId)
+        public DeletedStudentEvent(int studentId, int classId)
         {
             StudentId = studentId;
             ClassId = classId;

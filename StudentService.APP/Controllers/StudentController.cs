@@ -68,6 +68,16 @@ namespace StudentService.APP.Controllers
             }
             return Ok();
         }
+        [HttpPost("assgin-class")]
+        public async Task<IActionResult> AssignClass(AssignNewClassCommand cmd)
+        {
+            var result = await _mediator.Send(cmd);
+            if (!result)
+            {
+                return BadRequest();
+            }
+            return Ok();
+        }
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)

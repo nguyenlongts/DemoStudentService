@@ -2,17 +2,17 @@
 
 namespace StudentService.APP.Application.DomainEventHandler
 {
-    public class ConfirmedCreateStudentEventHandler : INotificationHandler<ConfirmedCreateStudentEvent>
+    public class CreatedStudentEventHandler : INotificationHandler<CreatedStudentEvent>
     {
 
         private readonly IProducer<Null, string> _producer;
-        public ConfirmedCreateStudentEventHandler(IProducer<Null, string> producer, IStudentRepository repo)
+        public CreatedStudentEventHandler(IProducer<Null, string> producer, IStudentRepository repo)
         {
             _producer = producer;
 
         }
 
-        public async Task Handle(ConfirmedCreateStudentEvent notification, CancellationToken cancellationToken)
+        public async Task Handle(CreatedStudentEvent notification, CancellationToken cancellationToken)
         {
             try
             {

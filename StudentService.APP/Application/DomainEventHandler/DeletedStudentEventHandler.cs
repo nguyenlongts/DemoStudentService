@@ -3,17 +3,17 @@ using StudentService.Domain.Events;
 
 namespace StudentService.APP.Application.DomainEventHandler
 {
-    public class ConfirmedDeleteStudentEventHandler : INotificationHandler<ConfirmedDeleteStudentEvent>
+    public class DeletedStudentEventHandler : INotificationHandler<DeletedStudentEvent>
     {
 
         private readonly IProducer<Null, string> _producer;
-        public ConfirmedDeleteStudentEventHandler(IStudentRepository repo, IProducer<Null, string> producer)
+        public DeletedStudentEventHandler(IStudentRepository repo, IProducer<Null, string> producer)
         {
             _producer = producer;
         }
 
 
-        public async Task Handle(ConfirmedDeleteStudentEvent notification, CancellationToken cancellationToken)
+        public async Task Handle(DeletedStudentEvent notification, CancellationToken cancellationToken)
         {
             try
             {

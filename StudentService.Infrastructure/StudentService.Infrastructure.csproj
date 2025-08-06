@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoCQRS_MediatR.Domain\StudentService.Domain.csproj" />
+    <ProjectReference Include="..\StudentService.Domain\StudentService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 
 namespace StudentService.APP.Application.Commands
 {
-    public class CreateStudentCommand : IRequest<GetStudentResponse>
+    public class CreateStudentCommand : IRequest<StudentResponse>
     {
         public string Name { get; set; }
 
