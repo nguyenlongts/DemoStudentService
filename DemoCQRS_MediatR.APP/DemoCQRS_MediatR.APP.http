@@ -1,6 +1,0 @@
-@DemoCQRS_MediatR.APP_HostAddress = http://localhost:5281
-
-GET {{DemoCQRS_MediatR.APP_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
