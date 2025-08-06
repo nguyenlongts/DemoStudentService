@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using DemoCQRS_MediatR.Infrastructure.EntityConfiguration;
-using MediatR;
-using DemoCQRS_MediatR.Infrastructure.Extensions;
-using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
-namespace DemoCQRS_MediatR.Infrastructure;
+﻿
 
+namespace StudentService.Infrastructure;
 public partial class ModelContext : DbContext
 {
     private readonly IMediator _mediator;

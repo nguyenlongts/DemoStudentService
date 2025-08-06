@@ -1,15 +1,6 @@
-﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DemoCQRS_MediatR.Infrastructure.EntityConfiguration
+namespace StudentService.Infrastructure.EntityConfiguration
 {
     public class StudentEntityConfiguration : IEntityTypeConfiguration<Student>
     {

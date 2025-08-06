@@ -1,4 +1,4 @@
-﻿namespace DemoCQRS_MediatR.APP.Application.IntegrationEvents
+﻿namespace StudentService.APP.Application.IntegrationEvents
 {
     public class   StudentDeletedIntegrationEvent
     {

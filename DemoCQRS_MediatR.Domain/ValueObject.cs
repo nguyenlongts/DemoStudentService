@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoCQRS_MediatR.Domain
+namespace StudentService.Domain
 {
     public abstract class ValueObject
     {

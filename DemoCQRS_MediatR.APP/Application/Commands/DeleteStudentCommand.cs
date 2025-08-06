@@ -1,6 +1,4 @@
-﻿
-
-namespace DemoCQRS_MediatR.APP.Application.Commands
+﻿namespace StudentService.APP.Application.Commands
 {
     public record DeleteStudentCommand(int studentId) : IRequest<bool> { }
 }

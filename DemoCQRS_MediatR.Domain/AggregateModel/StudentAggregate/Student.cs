@@ -1,4 +1,8 @@
-﻿namespace DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿using StudentService.Domain;
+
+
+
+namespace StudentService.Domain.AggregateModel.StudentAggregate;
 
 public class Student:BaseEntity,IAggregateRoot
 
@@ -55,9 +59,9 @@ public class Student:BaseEntity,IAggregateRoot
     }
     public void AddMark(int subjectId,int score)
     {
-        _marks.Add(new Mark(this.StudentId, subjectId, score));
+        _marks.Add(new Mark(StudentId, subjectId, score));
     }
-    private static DateTime ValidateDOB (DateTime dob)
+    private DateTime ValidateDOB (DateTime dob)
     {
         if (dob.Date > DateTime.Now.Date)
         {
@@ -66,7 +70,7 @@ public class Student:BaseEntity,IAggregateRoot
         return dob;
     }
 
-    private static string ValidateName(string Name)
+    private string ValidateName(string Name)
     {
         if (string.IsNullOrEmpty(Name))
         {
@@ -77,7 +81,7 @@ public class Student:BaseEntity,IAggregateRoot
         }
         return Name;
     }
-    public void AssignToClass(int classId)
+    public void AssignToNewClass(int classId)
     {
         if (classId <= 0)
             throw new DomainException("ClassId must be greater than 0");

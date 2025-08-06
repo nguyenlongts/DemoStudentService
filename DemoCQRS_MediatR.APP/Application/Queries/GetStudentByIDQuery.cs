@@ -1,6 +1,6 @@
-﻿
+﻿using StudentService.APP.DTOs;
 
-namespace DemoCQRS_MediatR.APP.Application.Queries
+namespace StudentService.APP.Application.Queries
 {
     public record GetStudentByIDQuery(int StudentId) : IRequest<GetStudentResponse>
     {

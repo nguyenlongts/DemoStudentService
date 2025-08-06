@@ -1,12 +1,11 @@
-﻿
+﻿using StudentService.Domain.AggregateModel.StudentAggregate;
 
-
-namespace DemoCQRS_MediatR.APP.Application.Commands
+namespace StudentService.APP.Application.Commands
 {
     public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, bool>
     {
-        private readonly StudentRepository _repo;
-        public UpdateStudentCommandHandler(StudentRepository repo)
+        private readonly IStudentRepository _repo;
+        public UpdateStudentCommandHandler(IStudentRepository repo)
         {
             _repo = repo;
         }

@@ -1,5 +1,6 @@
-﻿
-namespace DemoCQRS_MediatR.APP.Application.Commands
+﻿using StudentService.APP.DTOs;
+
+namespace StudentService.APP.Application.Commands
 {
     public class CreateStudentCommand : IRequest<GetStudentResponse>
     {

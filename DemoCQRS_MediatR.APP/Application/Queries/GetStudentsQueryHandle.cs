@@ -1,9 +1,12 @@
-﻿namespace DemoCQRS_MediatR.APP.Application.Queries
+﻿using StudentService.APP.DTOs;
+using StudentService.Domain.AggregateModel.StudentAggregate;
+
+namespace StudentService.APP.Application.Queries
 {
     public class GetStudentsQueryHandle : IRequestHandler<GetStudentsQuery, List<GetStudentResponse>>
     {
-        private readonly StudentRepository _repo;
-        public GetStudentsQueryHandle(StudentRepository repo)
+        private readonly IStudentRepository _repo;
+        public GetStudentsQueryHandle(IStudentRepository repo)
         {
             _repo = repo;
         }
@@ -11,7 +14,7 @@
         {
             try
             {
-                return (GetStudents());
+                return GetStudents();
             }
             catch (Exception e)
             {

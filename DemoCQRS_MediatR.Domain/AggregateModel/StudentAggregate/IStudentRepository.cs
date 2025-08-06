@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate
+namespace StudentService.Domain.AggregateModel.StudentAggregate
 {
     public interface IStudentRepository
     {

@@ -1,13 +1,12 @@
-﻿
+﻿using StudentService.APP.DTOs;
+using StudentService.Domain.AggregateModel.StudentAggregate;
 
-using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
-
-namespace DemoCQRS_MediatR.APP.Application.Queries
+namespace StudentService.APP.Application.Queries
 {
     public class GetStudentByIDQueryHandle : IRequestHandler<GetStudentByIDQuery, GetStudentResponse>
     {
-        private readonly StudentRepository _repo;
-        public GetStudentByIDQueryHandle(StudentRepository repo)
+        private readonly IStudentRepository _repo;
+        public GetStudentByIDQueryHandle(IStudentRepository repo)
         {
             _repo = repo;
         }
@@ -30,7 +29,8 @@ namespace DemoCQRS_MediatR.APP.Application.Queries
                         SubjectName = m.Subject.SubjectName,
                         Value = m.Score
                     })
-                    .ToList()
+                    .ToList(),
+                    ClassId = student.ClassId
                 };
                 return result;
 

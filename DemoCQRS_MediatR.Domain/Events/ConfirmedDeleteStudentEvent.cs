@@ -1,4 +1,4 @@
-﻿namespace DemoCQRS_MediatR.Domain.Events
+﻿namespace StudentService.Domain.Events
 {
     public class ConfirmedDeleteStudentEvent : INotification
     {

@@ -3,15 +3,15 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "DemoCQRS_MediatR.APP\\DemoCQRS_MediatR.APP.csproj",
+        "Path": "DemoCQRS_MediatR.APP\\StudentService.APP.csproj",
         "Action": "StartWithoutDebugging"
       },
       {
-        "Path": "DemoCQRS_MediatR.Domain\\DemoCQRS_MediatR.Domain.csproj",
+        "Path": "DemoCQRS_MediatR.Domain\\StudentService.Domain.csproj",
         "Action": "StartWithoutDebugging"
       },
       {
-        "Path": "DemoCQRS_MediatR.Infrastructure\\DemoCQRS_MediatR.Infrastructure.csproj",
+        "Path": "DemoCQRS_MediatR.Infrastructure\\StudentService.Infrastructure.csproj",
         "Action": "StartWithoutDebugging"
       }
     ]

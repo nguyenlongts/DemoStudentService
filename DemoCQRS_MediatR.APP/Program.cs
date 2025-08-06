@@ -1,3 +1,5 @@
+using StudentService.APP.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 

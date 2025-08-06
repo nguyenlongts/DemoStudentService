@@ -1,16 +1,12 @@
-﻿using DemoCQRS_MediatR.APP.Application.IntegrationEvents;
-using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
-using DemoCQRS_MediatR.Domain.Events;
-using MediatR;
-using System.Text.Json;
+﻿
 
-namespace DemoCQRS_MediatR.APP.Application.DomainEventHandler
+namespace StudentService.APP.Application.DomainEventHandler
 {
     public class ConfirmedCreateStudentEventHandler : INotificationHandler<ConfirmedCreateStudentEvent>
     {
 
         private readonly IProducer<Null, string> _producer;
-        public ConfirmedCreateStudentEventHandler(IProducer<Null, string> producer, StudentRepository repo)
+        public ConfirmedCreateStudentEventHandler(IProducer<Null, string> producer, IStudentRepository repo)
         {
             _producer = producer;
 
@@ -34,13 +30,13 @@ namespace DemoCQRS_MediatR.APP.Application.DomainEventHandler
         public Message<Null, string> CreateMessage(Student student)
         {
             var msg = new StudentCreatedIntegrationEvent
-            {
-                StudentId = student.StudentId,
-                Name = student.StudentName,
-                DOB = student.Birthday,
-                Gender = (int)student.Gender,
-                ClassId = student.ClassId
-            };
+            (
+                student.StudentId,
+                student.StudentName,
+                student.Birthday,
+                (int)student.Gender,
+                student.ClassId
+                );
             var message = new Message<Null, string>
             {
                 Value = JsonSerializer.Serialize(msg)

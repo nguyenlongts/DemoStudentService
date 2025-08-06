@@ -1,6 +1,4 @@
-﻿
-
-namespace DemoCQRS_MediatR.Domain.Exceptions
+﻿namespace StudentService.Domain.Exceptions
 {
     public class DomainException : Exception
     {

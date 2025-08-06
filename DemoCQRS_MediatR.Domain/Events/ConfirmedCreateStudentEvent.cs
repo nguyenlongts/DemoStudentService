@@ -1,6 +1,6 @@
-﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿using StudentService.Domain.AggregateModel.StudentAggregate;
 
-namespace DemoCQRS_MediatR.Domain.Events
+namespace StudentService.Domain.Events
 {
     public class ConfirmedCreateStudentEvent:INotification
     {

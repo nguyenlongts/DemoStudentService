@@ -1,4 +1,4 @@
-﻿namespace DemoCQRS_MediatR.APP.DTOs
+﻿namespace StudentService.APP.DTOs
 {
     public class MarkDTO
     {

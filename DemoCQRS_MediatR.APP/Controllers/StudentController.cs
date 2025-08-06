@@ -1,5 +1,6 @@
-﻿
-namespace DemoCQRS_MediatR.APP.Controllers
+﻿using StudentService.APP.Application.Commands;
+
+namespace StudentService.APP.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -56,6 +57,16 @@ namespace DemoCQRS_MediatR.APP.Controllers
                 return BadRequest(new { message = e.Message });
             }
 
+        }
+        [HttpPost("add-mark")]
+        public async Task<IActionResult> AddMark(AddMarkCommand cmd)
+        {
+            var result = await _mediator.Send(cmd);
+            if (!result)
+            {
+                return BadRequest();
+            }
+            return Ok();
         }
 
         [HttpDelete]

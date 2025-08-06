@@ -1,6 +1,7 @@
-﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿using StudentService.Domain.AggregateModel.StudentAggregate;
+using StudentService.Infrastructure;
 
-namespace DemoCQRS_MediatR.APP.Extensions
+namespace StudentService.APP.Extensions
 {
     public static class ServiceCollectionExtensions
     {
@@ -23,7 +24,7 @@ namespace DemoCQRS_MediatR.APP.Extensions
             var dbConnectionString = configuration.GetConnectionString("OracleDB");
             services.AddDbContext<ModelContext>((options) =>
             {
-                if (!String.IsNullOrEmpty(dbConnectionString))
+                if (!string.IsNullOrEmpty(dbConnectionString))
                 {
                     options.UseOracle(dbConnectionString);
                 }
@@ -37,11 +38,11 @@ namespace DemoCQRS_MediatR.APP.Extensions
                 BootstrapServers = configuration["Kafka:BootstrapServers"]
             };
 
-            services.AddSingleton<IProducer<Null, string>>(sp =>
+            services.AddSingleton(sp =>
             {
                 return new ProducerBuilder<Null, string>(producerConfig).Build();
             });
-            services.AddSingleton<IProducer<int, string>>(sp =>
+            services.AddSingleton(sp =>
             {
                 return new ProducerBuilder<int, string>(producerConfig).Build();
             });
@@ -52,7 +53,7 @@ namespace DemoCQRS_MediatR.APP.Extensions
                 AutoOffsetReset = AutoOffsetReset.Earliest
             };
 
-            services.AddSingleton<IConsumer<Null, string>>(sp =>
+            services.AddSingleton(sp =>
             {
                 return new ConsumerBuilder<Null, string>(consumerConfig).Build();
             });

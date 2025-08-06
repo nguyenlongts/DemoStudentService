@@ -1,4 +1,4 @@
-﻿namespace DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿namespace StudentService.Domain.AggregateModel.StudentAggregate;
 
 public partial class Class
 {

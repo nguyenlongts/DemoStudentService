@@ -1,5 +1,4 @@
-﻿
-namespace DemoCQRS_MediatR.APP.Application.Commands
+﻿namespace StudentService.APP.Application.Commands
 {
     public class UpdateStudentCommand : IRequest<bool>
     {

@@ -1,11 +1,5 @@
-﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
-using DemoCQRS_MediatR.Infrastructure;
-using DemoCQRS_MediatR.Infrastructure.Extensions;
-using MediatR;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Concurrent;
-
-namespace EFCore_B3.Infrastructure.Repository
+﻿
+namespace StudentService.Infrastructure
 {
     public class StudentRepository:IStudentRepository
     {

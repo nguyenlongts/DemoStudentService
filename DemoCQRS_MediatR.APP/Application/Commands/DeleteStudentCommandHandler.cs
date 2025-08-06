@@ -1,12 +1,12 @@
-﻿
+﻿using StudentService.Domain.AggregateModel.StudentAggregate;
 
-namespace DemoCQRS_MediatR.APP.Application.Commands
+namespace StudentService.APP.Application.Commands
 {
     public class DeleteStudentCommandHandler : IRequestHandler<DeleteStudentCommand, bool>
     {
         private readonly IPublisher _publisher;
-        private readonly StudentRepository _repo;
-        public DeleteStudentCommandHandler(IPublisher publisher, StudentRepository repo)
+        private readonly IStudentRepository _repo;
+        public DeleteStudentCommandHandler(IPublisher publisher, IStudentRepository repo)
         {
 
             _publisher = publisher;

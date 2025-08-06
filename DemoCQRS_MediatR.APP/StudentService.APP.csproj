@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoCQRS_MediatR.Domain\DemoCQRS_MediatR.Domain.csproj" />
-    <ProjectReference Include="..\DemoCQRS_MediatR.Infrastructure\DemoCQRS_MediatR.Infrastructure.csproj" />
+    <ProjectReference Include="..\DemoCQRS_MediatR.Domain\StudentService.Domain.csproj" />
+    <ProjectReference Include="..\DemoCQRS_MediatR.Infrastructure\StudentService.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

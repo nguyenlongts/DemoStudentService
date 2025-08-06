@@ -1,4 +1,6 @@
-﻿namespace DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿using StudentService.Domain;
+
+namespace StudentService.Domain.AggregateModel.StudentAggregate;
 
 public class Mark : ValueObject
 {

@@ -1,17 +1,17 @@
-﻿global using DemoCQRS_MediatR.APP.Application.Commands;
-global using DemoCQRS_MediatR.APP.Application.Queries;
+﻿global using StudentService.APP.Application.Commands;
+global using StudentService.APP.Application.Queries;
 global using MediatR;
 global using Microsoft.AspNetCore.Mvc;
-global using DemoCQRS_MediatR.Domain;
+global using StudentService.Domain;
 
-global using DemoCQRS_MediatR.APP.DTOs;
-global using EFCore_B3.Infrastructure.Repository;
+global using StudentService.APP.DTOs;
+
 global using Confluent.Kafka;
-global using DemoCQRS_MediatR.Infrastructure;
+global using StudentService.Infrastructure;
 global using Microsoft.EntityFrameworkCore;
-global using DemoCQRS_MediatR.Domain.Events;
-global using DemoCQRS_MediatR.APP.Application.IntegrationEvents;
+global using StudentService.Domain.Events;
+global using StudentService.APP.Application.IntegrationEvents;
 global using System.Text.Json;
-global using DemoCQRS_MediatR.APP.Extensions;
+global using StudentService.APP.Extensions;
 
-global using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+global using StudentService.Domain.AggregateModel.StudentAggregate;

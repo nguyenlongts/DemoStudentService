@@ -1,4 +1,4 @@
-﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿using StudentService.Domain.AggregateModel.StudentAggregate;
 
 public partial class Subject
 {

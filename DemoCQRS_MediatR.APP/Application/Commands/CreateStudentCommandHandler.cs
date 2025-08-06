@@ -1,11 +1,13 @@
-﻿using DemoCQRS_MediatR.Domain.AggregateModel.StudentAggregate;
+﻿using StudentService.APP.Application.Commands;
+using StudentService.APP.DTOs;
+using StudentService.Domain.AggregateModel.StudentAggregate;
 
 public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, GetStudentResponse>
 {
     private readonly IMediator _mediator;
-    private readonly StudentRepository _repo;
+    private readonly IStudentRepository _repo;
 
-    public CreateStudentCommandHandler(StudentRepository repo, IMediator mediator)
+    public CreateStudentCommandHandler(IStudentRepository repo, IMediator mediator)
     {
         _repo = repo;
         _mediator = mediator;

@@ -1,9 +1,7 @@
-﻿
-
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DemoCQRS_MediatR.Domain
+namespace StudentService.Domain
 {
 
 

@@ -1,13 +1,13 @@
-﻿
+﻿using StudentService.Domain.AggregateModel.StudentAggregate;
+using StudentService.Domain.Events;
 
-
-namespace DemoCQRS_MediatR.APP.Application.DomainEventHandler
+namespace StudentService.APP.Application.DomainEventHandler
 {
     public class ConfirmedDeleteStudentEventHandler : INotificationHandler<ConfirmedDeleteStudentEvent>
     {
 
         private readonly IProducer<Null, string> _producer;
-        public ConfirmedDeleteStudentEventHandler(StudentRepository repo, IProducer<Null, string> producer)
+        public ConfirmedDeleteStudentEventHandler(IStudentRepository repo, IProducer<Null, string> producer)
         {
             _producer = producer;
         }

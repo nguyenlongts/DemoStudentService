@@ -1,13 +1,6 @@
-﻿using DemoCQRS_MediatR.Domain;
+﻿
 
-using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DemoCQRS_MediatR.Infrastructure.Extensions
+namespace StudentService.Infrastructure.Extensions
 {
     static class MediatorExtension
     {
