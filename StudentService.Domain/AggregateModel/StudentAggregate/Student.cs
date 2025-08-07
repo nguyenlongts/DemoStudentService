@@ -1,5 +1,5 @@
-﻿using StudentService.Domain;
-using StudentService.Domain.AggregateModel.ClassAggregate;
+﻿using StudentService.Domain.AggregateModel.ClassAggregate;
+using StudentService.Domain.SeedWork;
 
 
 

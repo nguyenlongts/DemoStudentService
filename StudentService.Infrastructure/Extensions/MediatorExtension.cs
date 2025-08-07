@@ -1,4 +1,6 @@
-﻿namespace StudentService.Infrastructure.Extensions
+﻿using StudentService.Domain.SeedWork;
+
+namespace StudentService.Infrastructure.Extensions
 {
     static class MediatorExtension
     {

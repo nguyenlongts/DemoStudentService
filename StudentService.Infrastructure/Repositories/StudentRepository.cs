@@ -1,5 +1,4 @@
-﻿
-namespace StudentService.Infrastructure
+﻿namespace StudentService.Infrastructure.Repositories
 {
     public class StudentRepository : IStudentRepository
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 
 
-namespace StudentService.Domain
+namespace StudentService.Domain.SeedWork
 {
 
 

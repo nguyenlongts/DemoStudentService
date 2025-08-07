@@ -1,6 +1,4 @@
-﻿
-
-namespace StudentService.Domain
+﻿namespace StudentService.Domain.SeedWork
 {
      interface IAggregateRoot
     {
