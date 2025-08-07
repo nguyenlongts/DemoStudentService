@@ -1,6 +1,4 @@
-﻿using StudentService.Domain.AggregateModel.StudentAggregate;
-
-namespace StudentService.APP.Application.Commands
+﻿namespace StudentService.APP.Application.Commands
 {
     public class AddMarkCommandHandler : IRequestHandler<AddMarkCommand,bool>
     {

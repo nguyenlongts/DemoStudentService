@@ -1,11 +1,14 @@
-﻿namespace StudentService.Domain.AggregateModel.StudentAggregate;
+﻿
+namespace StudentService.Domain.AggregateModel.ClassAggregate;
 
 public partial class Class
 {
     public int Classid { get; private set; }
 
     public string? Classname { get; private set; }
-    public int StudentCount { get;  set; }
+    public int StudentCount { get; private set; }
+
+
     public virtual ICollection<Student> Students { get; set; } = new List<Student>();
     public Class()
     {
@@ -36,5 +39,17 @@ public partial class Class
         }
         return classname;
     }
+    public bool IsCapMax()
+    {
+        return StudentCount >= 40;
+    }
 
+    public void DecreaseStudentCount()
+    {
+        StudentCount -= 1;
+    }
+    public void IncreaseStudentCount()
+    {
+        StudentCount += 1;
+    }
 }

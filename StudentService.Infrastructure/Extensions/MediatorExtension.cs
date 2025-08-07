@@ -1,6 +1,4 @@
-﻿
-
-namespace StudentService.Infrastructure.Extensions
+﻿namespace StudentService.Infrastructure.Extensions
 {
     static class MediatorExtension
     {

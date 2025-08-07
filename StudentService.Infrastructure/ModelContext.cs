@@ -1,5 +1,7 @@
 ﻿
 
+using StudentService.Domain.AggregateModel.ClassAggregate;
+
 namespace StudentService.Infrastructure;
 public partial class ModelContext : DbContext
 {

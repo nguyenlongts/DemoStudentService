@@ -1,6 +1,4 @@
-﻿
-
-namespace StudentService.Infrastructure.EntityConfiguration
+﻿namespace StudentService.Infrastructure.EntityConfiguration
 {
     public class StudentEntityConfiguration : IEntityTypeConfiguration<Student>
     {

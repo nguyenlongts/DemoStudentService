@@ -1,8 +1,4 @@
-﻿using StudentService.APP.Application.Commands;
-using StudentService.APP.DTOs;
-using StudentService.Domain.AggregateModel.StudentAggregate;
-
-public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, StudentResponse>
+﻿public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, StudentResponse>
 {
     private readonly IMediator _mediator;
     private readonly IStudentRepository _repo;

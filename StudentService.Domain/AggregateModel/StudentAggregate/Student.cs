@@ -1,4 +1,5 @@
 ﻿using StudentService.Domain;
+using StudentService.Domain.AggregateModel.ClassAggregate;
 
 
 
@@ -41,11 +42,11 @@ public class Student:BaseEntity,IAggregateRoot
         Gender = gender;
         Status = status;
     }
-    //public void SetConfirmedAssignNewClass(int newClassId)
-    //{
-    //    var @event = new ConfirmedAssignNewClass(newClassId);
-    //    AddDomainEvent(@event);
-    //}
+    public void SetAssignedNewClass(int studentId, int oldClassId,int newClassId)
+    {
+        var @event = new StudentClassChangedEvent(studentId, oldClassId, newClassId);
+      AddDomainEvent(@event);
+    }
     public void SetStudentDeleted()
     {
         var @event = new DeletedStudentEvent(StudentId,ClassId);
@@ -88,9 +89,8 @@ public class Student:BaseEntity,IAggregateRoot
     }
     public void AssignToNewClass(int classId)
     {
-        if (classId <= 0)
-            throw new DomainException("ClassId must be greater than 0");
         ClassId=classId;
+
     }
    
 }

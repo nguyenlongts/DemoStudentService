@@ -3,7 +3,7 @@ global using StudentService.APP.Application.Queries;
 global using MediatR;
 global using Microsoft.AspNetCore.Mvc;
 global using StudentService.Domain;
-
+global using StudentService.Domain.AggregateModel.ClassAggregate;
 global using StudentService.APP.DTOs;
 
 global using Confluent.Kafka;

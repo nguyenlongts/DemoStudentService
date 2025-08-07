@@ -1,42 +1,53 @@
 ﻿
+using StudentService.Domain.AggregateModel.ClassAggregate;
+
 namespace StudentService.APP.Application.Commands
 {
+
     public class AssignNewClassCommandHandler : IRequestHandler<AssignNewClassCommand, bool>
     {
-        private readonly IStudentRepository _repo;
-        private readonly IProducer<Null, string> _producer;
-        public AssignNewClassCommandHandler(IStudentRepository repo, IProducer<Null, string> producer)
+        private readonly IStudentRepository _studentRepo;
+        public AssignNewClassCommandHandler(
+            IStudentRepository studentRepo,
+            IClassRepository classRepo)
         {
-            _repo = repo;
-            _producer = producer;
+            _studentRepo = studentRepo;
         }
+
         public async Task<bool> Handle(AssignNewClassCommand request, CancellationToken cancellationToken)
         {
-            var student = await _repo.GetStudent(request.StudentId);
+            var student = await _studentRepo.GetStudent(request.StudentId);
             if (student == null)
             {
                 return false;
             }
+
             if (student.ClassId == request.NewClassId)
             {
-                throw new Exception("New class Id is same as current class Id");
+
+                throw new Exception("New class Id is same as old class id");
             }
+
             if (request.NewClassId < 1)
             {
-                throw new Exception("class Id must greater than 0");
+                throw new Exception("Class Id must be greater than 0");
             }
-            var @event = new StudentRequestedClassChangeEvent
-            (
-                request.NewClassId,
-                student.StudentId
+            var oldClassId = student.ClassId;
 
-            );
-            await _producer.ProduceAsync("student-request-class-change-topic", new Message<Null, string>
+            try
             {
-                Value = JsonSerializer.Serialize(@event)
-            });
-            return true;
-
+                student.AssignToNewClass(request.NewClassId);
+                student.SetAssignedNewClass(student.StudentId, oldClassId, request.NewClassId);
+                _studentRepo.Update(student);
+                await _studentRepo.SaveEntitiesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
+

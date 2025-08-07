@@ -23,7 +23,7 @@ namespace StudentService.APP.Application.DomainEventHandler
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Kafka publish failed: {ex.Message}");
+               throw new Exception($"Kafka publish failed: {ex.Message}");
             }
         }
 

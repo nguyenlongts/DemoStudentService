@@ -1,7 +1,7 @@
 ﻿
 namespace StudentService.Infrastructure
 {
-    public class StudentRepository:IStudentRepository
+    public class StudentRepository : IStudentRepository
     {
         private readonly IMediator _mediator;
         private readonly ModelContext _context;
@@ -13,16 +13,16 @@ namespace StudentService.Infrastructure
 
         public async Task<Student> GetStudent(int id)
         {
-            var student = await _context.Students.FindAsync(id);
-            if (student == null)
-            {
-                return null;
-            }
-            student = await _context.Students
+            var student = await _context.Students
                 .Include(st => st.Marks)
                     .ThenInclude(m => m.Subject)
                 .Include(c => c.Class)
                 .FirstOrDefaultAsync(s => s.StudentId == id);
+            if (student == null)
+            {
+                return null;
+            }
+
             return student;
         }
 
@@ -52,6 +52,8 @@ namespace StudentService.Infrastructure
         {
             await _mediator.DispatchDomainEventAsync(_context);
             await _context.SaveChangesAsync();
+            
+            
         }
 
     }

@@ -13,14 +13,31 @@ namespace StudentService.Infrastructure
         {
             _context = context;
         }
-        public Class GetById(int id)
+
+        public async Task DecrementStudentCount(int id)
         {
-            return _context.Classes.FirstOrDefault(c => c.Classid == id);
+            var existClass = await GetById(id);
+            if (existClass == null) { return; }
+            existClass.DecreaseStudentCount();
         }
 
-        public void Save()
+        public async Task<Class> GetById(int id)
+        {
+            var @class = await _context.Classes.FirstOrDefaultAsync(c => c.Classid == id);
+            if (@class == null) { return null; }
+            return @class;
+        }
+
+        public async Task IncrementStudentCount(int id)
+        {
+            var existClass = await GetById(id);
+            if (existClass == null) { return; }
+            existClass.IncreaseStudentCount();
+        }
+
+        public async Task SaveAsync()
         {   
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public void Update(Class @class)

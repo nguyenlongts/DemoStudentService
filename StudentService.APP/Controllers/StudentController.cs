@@ -1,4 +1,4 @@
-﻿using StudentService.APP.Application.Commands;
+﻿
 
 namespace StudentService.APP.Controllers
 {
@@ -31,14 +31,15 @@ namespace StudentService.APP.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            
-                var query = new GetStudentByIDQuery(id);
-                var result = await _mediator.Send(query);
-            if (result == null) { 
-            return NotFound();
+
+            var query = new GetStudentByIDQuery(id);
+            var result = await _mediator.Send(query);
+            if (result == null)
+            {
+                return NotFound();
             }
             return Ok(result);
-            
+
         }
 
         [HttpPost]
@@ -48,7 +49,7 @@ namespace StudentService.APP.Controllers
             try
             {
                 var result = await _mediator.Send(cmd);
-                
+
                 return Ok(result);
 
             }
@@ -66,6 +67,7 @@ namespace StudentService.APP.Controllers
             {
                 return BadRequest();
             }
+
             return Ok();
         }
         [HttpPost("assgin-class")]

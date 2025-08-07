@@ -1,7 +1,4 @@
-﻿using StudentService.Domain.AggregateModel.StudentAggregate;
-using StudentService.Infrastructure;
-
-namespace StudentService.APP.Extensions
+﻿namespace StudentService.APP.Extensions
 {
     public static class ServiceCollectionExtensions
     {
@@ -63,7 +60,7 @@ namespace StudentService.APP.Extensions
         private static IServiceCollection AddScopeService(this IServiceCollection services)
         {
             services.AddScoped<IStudentRepository,StudentRepository>();
-
+            services.AddScoped<IClassRepository, ClassRepository>();
             return services;
         }
     }

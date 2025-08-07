@@ -1,6 +1,4 @@
-﻿using StudentService.Domain.AggregateModel.StudentAggregate;
-using StudentService.Domain.Events;
-
+﻿
 namespace StudentService.APP.Application.DomainEventHandler
 {
     public class DeletedStudentEventHandler : INotificationHandler<DeletedStudentEvent>

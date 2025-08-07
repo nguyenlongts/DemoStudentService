@@ -9,6 +9,7 @@ global using System.Text;
 global using System.Threading.Tasks;
 global using MediatR;
 global using StudentService.Domain;
+global using StudentService.Domain.AggregateModel.ClassAggregate;
 
 global using StudentService.Infrastructure.Extensions;
 global using System.Collections.Concurrent;
