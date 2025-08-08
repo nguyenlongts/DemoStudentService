@@ -32,13 +32,6 @@ namespace StudentService.APP.Application.Queries
                 Name = student.StudentName,
                 DOB = DateOnly.FromDateTime(student.Birthday),
                 Gender = student.Gender.ToString(),
-                Marks = student.Marks
-                    .Select(m => new MarkDTO
-                    {
-                        SubjectName = m.Subject.SubjectName,
-                        Value = m.Score
-                    })
-                    .ToList(),
                 ClassId = student.ClassId
             }).ToList();
             return result;

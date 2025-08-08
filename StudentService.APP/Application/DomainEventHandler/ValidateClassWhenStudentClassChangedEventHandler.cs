@@ -21,7 +21,7 @@
                 if (newClass.IsCapMax())
                 {
                     throw new Exception(
-                            $"Class is full. Current: {newClass.StudentCount}, Max: 40");
+                            $"Class is full.Max: 40");
                 }
                 await _repo.IncrementStudentCount(notification.NewClassId);
                 await _repo.DecrementStudentCount(notification.OldClassId);

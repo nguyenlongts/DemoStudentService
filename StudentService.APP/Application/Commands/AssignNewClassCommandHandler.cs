@@ -4,7 +4,7 @@ using StudentService.Domain.AggregateModel.ClassAggregate;
 namespace StudentService.APP.Application.Commands
 {
 
-    public class AssignNewClassCommandHandler : IRequestHandler<AssignNewClassCommand, bool>
+    public class AssignNewClassCommandHandler : IRequestHandler<AssignNewClassCommand, AssignClassResponse>
     {
         private readonly IStudentRepository _studentRepo;
         public AssignNewClassCommandHandler(
@@ -14,23 +14,34 @@ namespace StudentService.APP.Application.Commands
             _studentRepo = studentRepo;
         }
 
-        public async Task<bool> Handle(AssignNewClassCommand request, CancellationToken cancellationToken)
+        public async Task<AssignClassResponse> Handle(AssignNewClassCommand request, CancellationToken cancellationToken)
         {
             var student = await _studentRepo.GetStudent(request.StudentId);
             if (student == null)
             {
-                return false;
+                return new AssignClassResponse
+                {
+                    isSuccess = false,
+                    Message = "Student not found"
+                };
             }
 
             if (student.ClassId == request.NewClassId)
             {
-
-                throw new Exception("New class Id is same as old class id");
+                return new AssignClassResponse
+                {
+                    isSuccess = false,
+                    Message = "New class id is same as old class id"
+                };
             }
 
             if (request.NewClassId < 1)
             {
-                throw new Exception("Class Id must be greater than 0");
+                return new AssignClassResponse
+                {
+                    isSuccess = false,
+                    Message = "Class Id must be greater than 0"
+                };
             }
             var oldClassId = student.ClassId;
 
@@ -40,12 +51,19 @@ namespace StudentService.APP.Application.Commands
                 student.SetAssignedNewClass(student.StudentId, oldClassId, request.NewClassId);
                 _studentRepo.Update(student);
                 await _studentRepo.SaveEntitiesAsync();
-                return true;
+                return new AssignClassResponse
+                {
+                    isSuccess = true,
+                    Message = "Assigned successfully"
+                };
             }
             catch (Exception ex)
             {
-                return false;
-                throw new Exception(ex.Message);
+                return new AssignClassResponse
+                {
+                    isSuccess = false,
+                    Message = ex.Message
+                };
             }
         }
     }

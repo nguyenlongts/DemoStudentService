@@ -1,6 +1,6 @@
 ﻿namespace StudentService.APP.Application.Commands
 {
-    public class AssignNewClassCommand:IRequest<bool>
+    public class AssignNewClassCommand:IRequest<AssignClassResponse>
     {
         public int StudentId { get; }
 

@@ -17,19 +17,13 @@ namespace StudentService.APP.Application.Queries
                 var student = await GetStudent(request.StudentId);
                 if (student == null)
                 {
-                    throw new Exception("Not found");
+                    return null;
                 }
                 var result = new StudentResponse()
                 {
                     Name = student.StudentName,
                     DOB = DateOnly.FromDateTime(student.Birthday),
                     Gender = student.Gender.ToString(),
-                    Marks = student.Marks.Select(m => new MarkDTO
-                    {
-                        SubjectName = m.Subject.SubjectName,
-                        Value = m.Score
-                    })
-                    .ToList(),
                     ClassId = student.ClassId
                 };
                 return result;
@@ -37,8 +31,7 @@ namespace StudentService.APP.Application.Queries
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                return null;
+                throw e;
             }
         }
 

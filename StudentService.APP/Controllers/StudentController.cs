@@ -20,14 +20,35 @@ namespace StudentService.APP.Controllers
             {
                 var query = new GetStudentsQuery();
                 var result = await _mediator.Send(query);
-                return Ok(result);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                return NotFound();
             }
             catch (Exception e)
             {
-                return NotFound();
+                throw new Exception(e.Message);
             }
         }
-
+        [HttpGet("{id}/marks")]
+        public async Task<IActionResult> GetMark(int id)
+        {
+            try
+            {
+                var query = new GetStudentMarksQuery(id);
+                var result = await _mediator.Send(query);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                return NotFound();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -39,11 +60,9 @@ namespace StudentService.APP.Controllers
                 return NotFound();
             }
             return Ok(result);
-
         }
 
         [HttpPost]
-
         public async Task<IActionResult> Create(CreateStudentCommand cmd)
         {
             try
@@ -57,7 +76,6 @@ namespace StudentService.APP.Controllers
             {
                 return BadRequest(new { message = e.Message });
             }
-
         }
         [HttpPost("add-mark")]
         public async Task<IActionResult> AddMark(AddMarkCommand cmd)
@@ -74,11 +92,8 @@ namespace StudentService.APP.Controllers
         public async Task<IActionResult> AssignClass(AssignNewClassCommand cmd)
         {
             var result = await _mediator.Send(cmd);
-            if (!result)
-            {
-                return BadRequest();
-            }
-            return Ok();
+            
+            return Ok(result);
         }
 
         [HttpDelete]

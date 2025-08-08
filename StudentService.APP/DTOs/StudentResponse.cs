@@ -9,7 +9,8 @@
         public string? Gender { get; set; }
 
         public int ClassId { get; set; }
-        public List<MarkDTO> Marks { get; set; } = new();
+
+        public string Message { get; set; }
 
     }
 }
