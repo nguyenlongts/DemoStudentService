@@ -10,3 +10,5 @@ global using StudentService.Domain.Exceptions;
 global using System.Xml.Linq;
 global using StudentService.Domain.AggregateModel.StudentAggregate;
 global using System.ComponentModel.DataAnnotations.Schema;
+global using StudentService.Domain.AggregateModel.ClassAggregate;
+global using StudentService.Domain.SeedWork;

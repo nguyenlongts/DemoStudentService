@@ -1,15 +1,8 @@
-﻿using StudentService.Domain.AggregateModel.ClassAggregate;
-using StudentService.Domain.SeedWork;
-
-
-
-namespace StudentService.Domain.AggregateModel.StudentAggregate;
+﻿namespace StudentService.Domain.AggregateModel.StudentAggregate;
 
 public class Student:BaseEntity,IAggregateRoot
-
 {
     private readonly List<Mark> _marks = new();
-
     public int StudentId { get; private set; }
     public string StudentName { get; private set; } = null!;
     public DateTime Birthday { get; private set; }
