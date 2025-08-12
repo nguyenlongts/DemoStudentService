@@ -1,1 +1,2 @@
-Demo a service in microservices architecture
+Demo a service in microservices architecture:
+CQRS + DDD + Kafka
