@@ -24,7 +24,8 @@ namespace StudentService.APP.Application.Queries
                     Name = student.StudentName,
                     DOB = DateOnly.FromDateTime(student.Birthday),
                     Gender = student.Gender.ToString(),
-                    ClassId = student.ClassId
+                    ClassId = student.ClassId,
+                    Message = "true"
                 };
                 return result;
 

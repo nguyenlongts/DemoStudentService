@@ -4,15 +4,11 @@
     "Projects": [
       {
         "Path": "StudentService.APP\\StudentService.APP.csproj",
-        "Action": "StartWithoutDebugging"
+        "Action": "Start"
       },
       {
-        "Path": "StudentService.Domain\\StudentService.Domain.csproj",
-        "Action": "StartWithoutDebugging"
-      },
-      {
-        "Path": "StudentService.Infrastructure\\StudentService.Infrastructure.csproj",
-        "Action": "StartWithoutDebugging"
+        "Path": "APIGateway\\APIGateway.csproj",
+        "Action": "Start"
       }
     ]
   }

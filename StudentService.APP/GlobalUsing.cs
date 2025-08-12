@@ -2,10 +2,8 @@
 global using StudentService.APP.Application.Queries;
 global using MediatR;
 global using Microsoft.AspNetCore.Mvc;
-global using StudentService.Domain;
 global using StudentService.Domain.AggregateModel.ClassAggregate;
 global using StudentService.APP.DTOs;
-
 global using Confluent.Kafka;
 global using StudentService.Infrastructure;
 global using Microsoft.EntityFrameworkCore;
@@ -13,5 +11,4 @@ global using StudentService.Domain.Events;
 global using StudentService.APP.Application.IntegrationEvents;
 global using System.Text.Json;
 global using StudentService.APP.Extensions;
-
 global using StudentService.Domain.AggregateModel.StudentAggregate;
