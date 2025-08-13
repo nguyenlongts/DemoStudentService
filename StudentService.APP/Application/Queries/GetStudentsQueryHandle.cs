@@ -1,5 +1,4 @@
-﻿using StudentService.APP.DTOs;
-using StudentService.Domain.AggregateModel.StudentAggregate;
+﻿
 
 namespace StudentService.APP.Application.Queries
 {

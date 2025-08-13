@@ -1,5 +1,5 @@
 ﻿
-using StudentService.Domain.AggregateModel.ClassAggregate;
+
 
 namespace StudentService.APP.Application.Commands
 {

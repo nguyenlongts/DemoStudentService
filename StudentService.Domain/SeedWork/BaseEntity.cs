@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-
+﻿
 namespace StudentService.Domain.SeedWork
 {
 

@@ -1,4 +1,4 @@
-﻿using StudentService.Domain.SeedWork;
+﻿
 
 namespace StudentService.Domain.AggregateModel.StudentAggregate;
 

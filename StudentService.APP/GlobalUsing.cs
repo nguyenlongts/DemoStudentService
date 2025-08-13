@@ -12,3 +12,5 @@ global using StudentService.APP.Application.IntegrationEvents;
 global using System.Text.Json;
 global using StudentService.APP.Extensions;
 global using StudentService.Domain.AggregateModel.StudentAggregate;
+global using StudentService.APP.Services;
+global using StudentService.Infrastructure.Repositories;

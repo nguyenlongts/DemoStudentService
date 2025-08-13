@@ -1,7 +1,4 @@
-﻿using StudentService.APP.Services;
-using StudentService.Infrastructure.Repositories;
-
-namespace StudentService.APP.Extensions
+﻿namespace StudentService.APP.Extensions
 {
     public static class ServiceCollectionExtensions
     {

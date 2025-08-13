@@ -1,4 +1,4 @@
-﻿using StudentService.Domain.AggregateModel.StudentAggregate;
+﻿
 
 namespace StudentService.APP.Application.Commands
 {

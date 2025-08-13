@@ -1,6 +1,4 @@
-﻿using StudentService.Domain.AggregateModel.StudentAggregate;
-
-public partial class Subject
+﻿public partial class Subject
 {
     public int SubjectId { get; set; }
 

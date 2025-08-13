@@ -10,10 +10,14 @@
             _classRepo = classRepo;
         }
 
-        public async Task<StudentResponse> GetStudentWithClass(int id)
+        public async Task<StudentResponse?> GetStudentWithClass(int id)
         {
             var student = await _studentRepo.GetStudent(id);
-            var @class = await _classRepo.GetById(id);
+            if(student == null)
+            {
+                return null;
+            }
+            var @class = await _classRepo.GetById(student.ClassId);
             var response = new StudentResponse
             {
                 ClassId = @class.ClassId,

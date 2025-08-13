@@ -1,5 +1,4 @@
-﻿using StudentService.APP.DTOs;
-
+﻿
 namespace StudentService.APP.Application.Commands
 {
     public class CreateStudentCommand : IRequest<StudentResponse>
