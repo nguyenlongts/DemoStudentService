@@ -1,12 +1,13 @@
 ﻿using StudentService.APP.DTOs;
 using StudentService.Domain.AggregateModel.StudentAggregate;
+using StudentService.APP.Services;
 
 namespace StudentService.APP.Application.Queries
 {
     public class GetStudentByIDQueryHandle : IRequestHandler<GetStudentByIDQuery, StudentResponse>
     {
-        private readonly IStudentRepository _repo;
-        public GetStudentByIDQueryHandle(IStudentRepository repo)
+        private readonly StudentDomainService _repo;
+        public GetStudentByIDQueryHandle(StudentDomainService repo)
         {
             _repo = repo;
         }
@@ -19,15 +20,7 @@ namespace StudentService.APP.Application.Queries
                 {
                     return null;
                 }
-                var result = new StudentResponse()
-                {
-                    Name = student.StudentName,
-                    DOB = DateOnly.FromDateTime(student.Birthday),
-                    Gender = student.Gender.ToString(),
-                    ClassId = student.ClassId,
-                    Message = "true"
-                };
-                return result;
+                return student;
 
             }
             catch (Exception e)
@@ -36,9 +29,9 @@ namespace StudentService.APP.Application.Queries
             }
         }
 
-        private async Task<Student> GetStudent(int id)
+        private async Task<StudentResponse> GetStudent(int id)
         {
-            return await _repo.GetStudent(id);
+            return await _repo.GetStudentWithClass(id);
         }
     }
 }

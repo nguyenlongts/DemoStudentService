@@ -23,7 +23,7 @@ namespace StudentService.Infrastructure.Repositories
 
         public async Task<Class> GetById(int id)
         {
-            var @class = await _context.Classes.FirstOrDefaultAsync(c => c.Classid == id);
+            var @class = await _context.Classes.FirstOrDefaultAsync(c => c.ClassId == id);
             if (@class == null) { return null; }
             return @class;
         }

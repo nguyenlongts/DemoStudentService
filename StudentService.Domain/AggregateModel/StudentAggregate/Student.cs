@@ -9,7 +9,6 @@ public class Student:BaseEntity,IAggregateRoot
     public Gender Gender { get; private set; }
     public StudentStatus Status { get; private set; }
     public int ClassId { get; private set; }
-    public  Class? Class { get; private set; }
     public  IReadOnlyCollection<Mark> Marks => _marks.AsReadOnly();
     private Student() { }
 

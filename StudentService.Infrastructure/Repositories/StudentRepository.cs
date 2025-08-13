@@ -15,7 +15,6 @@
             var student = await _context.Students
                 .Include(st => st.Marks)
                     .ThenInclude(m => m.Subject)
-                .Include(c => c.Class)
                 .FirstOrDefaultAsync(s => s.StudentId == id);
             if (student == null)
             {
@@ -44,7 +43,6 @@
             return await _context.Students
                 .Include(st => st.Marks)
                     .ThenInclude(m => m.Subject)
-                .Include(c => c.Class)
                 .ToListAsync();
         }
         public async Task SaveEntitiesAsync()

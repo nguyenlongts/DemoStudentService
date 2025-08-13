@@ -21,7 +21,7 @@
           "Port": 5281
         }
       ],
-      "UpstreamPathTemplate": "/gateway/Student/{id}",
+      "UpstreamPathTemplate": "/Student/{id}",
       "UpstreamHttpMethod": [ "GET" ]
     }
   ],

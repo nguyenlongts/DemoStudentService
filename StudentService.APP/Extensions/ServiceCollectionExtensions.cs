@@ -1,4 +1,5 @@
-﻿using StudentService.Infrastructure.Repositories;
+﻿using StudentService.APP.Services;
+using StudentService.Infrastructure.Repositories;
 
 namespace StudentService.APP.Extensions
 {
@@ -63,6 +64,7 @@ namespace StudentService.APP.Extensions
         {
             services.AddScoped<IStudentRepository,StudentRepository>();
             services.AddScoped<IClassRepository, ClassRepository>();
+            services.AddScoped<StudentDomainService>();
             return services;
         }
     }

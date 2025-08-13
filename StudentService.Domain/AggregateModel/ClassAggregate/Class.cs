@@ -3,20 +3,18 @@ namespace StudentService.Domain.AggregateModel.ClassAggregate;
 
 public partial class Class
 {
-    public int Classid { get; private set; }
+    public int ClassId { get; private set; }
 
     public string? Classname { get; private set; }
     public int StudentCount { get; private set; }
 
-
-    public virtual ICollection<Student> Students { get; set; } = new List<Student>();
     public Class()
     {
 
     }
     public Class(int id, string classname)
     {
-        Classid = ValidateClassId(id);
+        ClassId = ValidateClassId(id);
         Classname = ValidateClassName(classname);
     }
 

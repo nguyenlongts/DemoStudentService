@@ -29,28 +29,12 @@ public partial class ModelContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new StudentEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new ClassEntityConfiguration());
         modelBuilder
             .HasDefaultSchema("TEST")
             .UseCollation("USING_NLS_COMP");
 
-        modelBuilder.Entity<Class>(entity =>
-        {
-            entity.HasKey(e => e.Classid).HasName("SYS_C007543");
-
-            entity.ToTable("TBL_CLASS");
-
-            entity.Property(e => e.Classid)
-                .HasPrecision(10)
-                .ValueGeneratedNever()
-                .HasColumnName("CLASSID");
-            entity.Property(e => e.Classname)
-                .HasMaxLength(255)
-                .IsUnicode(false)
-                .HasColumnName("CLASSNAME");
-            entity.Property(e => e.StudentCount)
-                .HasColumnType("NUMBER")
-                .HasColumnName("STUDENT_COUNT");
-        });
+       
 
         modelBuilder.Entity<Mark>(entity =>
         {
